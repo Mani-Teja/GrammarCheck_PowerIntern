@@ -1,8 +1,3 @@
-nltk
-pattern
-spellchecker
-
-to be executed during installation of project
-
-nltk.download('punkt')
-nltk.download('averaged_perceptron_tagger')
+nltk==3.7
+Pattern==3.6
+spellchecker==0.4
