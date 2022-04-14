@@ -1,10 +1,10 @@
 # GrammarCheck_PowerIntern
-#Intern project on NLP
+# Infosys PowerIntern project on NLP
 
-# Tnstall below python packages using PIP :
+# Install below python packages using PIP :
 
-nltk
-pattern
+nltk,
+pattern,
 spellchecker
 
 # To be executed during installation of project
