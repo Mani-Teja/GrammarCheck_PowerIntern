@@ -7,6 +7,7 @@ from pattern.text.en import pluralize, singularize
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
+#written by aviral mishra
 def check_pluralization(nlp):
     count=0
     correct_text=""
@@ -39,6 +40,7 @@ def check_pluralization(nlp):
                 correct_text+=s[i][0]+" "
     return count,correct_text
 
+#written by aviral mishra
 def spell_checker(data):
     spell = SpellChecker()
     misspelled = spell.split_words(data)
@@ -52,11 +54,13 @@ def spell_checker(data):
             mispelled += word + ' '
     return err_count,mispelled
 
+#written by chakori chaturvedi
 def read_file(file):
     fp= open(file,"r",encoding='utf8',errors='ignore')
     text=fp.readlines()
     return text
 
+#written by chakori chaturvedi
 def check_articleError(nlp):
     print(nlp)
     path="uncNouns.txt"
@@ -97,6 +101,7 @@ def check_articleError(nlp):
                 ntext+=" "
     return count , ntext
 
+#written by maniteja
 def check_capitalization(nlp) :
     error_count = 0
     correct_text = ''
