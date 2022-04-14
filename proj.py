@@ -13,17 +13,16 @@ def check_pluralization(nlp):
     correct_text=""
     for s in nlp:
         for i in range(len(s)):
-            print(s[i][0] , s[i][1])
             if (i!=len(s)-1) and (s[i][1] in ['NN' , 'NNP','NNS' , 'NNPS']) and s[i-1][1] in ['CD']:
                 continue
             if (i!=len(s)-1) and (s[i][1] in ['NN' , 'NNP']):
-                if s[i+1][1] in ['VB','VBP'] or s[i-1][1] in ['VB','VBP']:
+                if s[i+1][1] in ['VB','VBP'] or s[i-1][1] in ['VB','VBP','JJ']:
                     count+=1
                     correct_text+=pluralize(s[i][0])+" "
                 else:
                     correct_text+=s[i][0]+" "
             elif (i!=len(s)-1) and (s[i][1] in ['NNS' , 'NNPS']):
-                if s[i+1][1] in ['VBZ','NNS']:
+                if s[i+1][1] in ['VBZ','NNS'] or s[i-1][1] in ['DT']:
                     correct_text+=singularize(s[i][0])+" "
                 else:
                     correct_text+=s[i][0]+" "
@@ -40,14 +39,13 @@ def check_pluralization(nlp):
                 correct_text+=s[i][0]+" "
     return count,correct_text
 
-#written by aviral mishra
 def spell_checker(data):
     spell = SpellChecker()
-    misspelled = spell.split_words(data)
+    misspelled = word_tokenize(data)
     mispelled , err_count ="" , 0
     for word in misspelled:
         corr_word = spell.correction(word)
-        if  word != corr_word and not word.isupper() :
+        if  word != corr_word and not word.isupper() and word not in ['.','"',"'",'?','!',':',';','(',')','[',']','{','}',',']:
             mispelled=mispelled+corr_word+" "
             err_count += 1
         else :
@@ -60,9 +58,7 @@ def read_file(file):
     text=fp.readlines()
     return text
 
-#written by chakori chaturvedi
 def check_articleError(nlp):
-    print(nlp)
     path="uncNouns.txt"
     unc_text=read_file(path)
     unc_words=[]
