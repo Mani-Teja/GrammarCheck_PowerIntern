@@ -1,0 +1,8 @@
+nltk
+pattern
+spellchecker
+
+to be executed during installation of project
+
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
