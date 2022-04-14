@@ -1,6 +1,56 @@
 from nltk.tokenize import word_tokenize , sent_tokenize
 import nltk
 from pattern.en import referenced
+from spellchecker import SpellChecker
+from pattern.text.en import pluralize, singularize
+
+nltk.download('punkt')
+nltk.download('averaged_perceptron_tagger')
+
+def check_pluralization(nlp):
+    count=0
+    correct_text=""
+    for s in nlp:
+        for i in range(len(s)):
+            print(s[i][0] , s[i][1])
+            if (i!=len(s)-1) and (s[i][1] in ['NN' , 'NNP','NNS' , 'NNPS']) and s[i-1][1] in ['CD']:
+                continue
+            if (i!=len(s)-1) and (s[i][1] in ['NN' , 'NNP']):
+                if s[i+1][1] in ['VB','VBP'] or s[i-1][1] in ['VB','VBP']:
+                    count+=1
+                    correct_text+=pluralize(s[i][0])+" "
+                else:
+                    correct_text+=s[i][0]+" "
+            elif (i!=len(s)-1) and (s[i][1] in ['NNS' , 'NNPS']):
+                if s[i+1][1] in ['VBZ','NNS']:
+                    correct_text+=singularize(s[i][0])+" "
+                else:
+                    correct_text+=s[i][0]+" "
+            elif  (i!=len(s)-1) and s[i][1] in ['CD']:
+                if s[i][0]=="1" or s[i][0]=="one":
+                    if s[i+1][1] in ['NNS' , 'NNPS']:
+                        count+=1
+                        correct_text+=s[i][0]+" "+singularize(s[i+1][0])+" "
+                else:
+                    if s[i+1][1] in ['NN' , 'NNP']:
+                        count+=1
+                        correct_text+=s[i][0]+" "+pluralize(s[i+1][0])+" "
+            else:
+                correct_text+=s[i][0]+" "
+    return count,correct_text
+
+def spell_checker(data):
+    spell = SpellChecker()
+    misspelled = spell.split_words(data)
+    mispelled , err_count ="" , 0
+    for word in misspelled:
+        corr_word = spell.correction(word)
+        if  word != corr_word and not word.isupper() :
+            mispelled=mispelled+corr_word+" "
+            err_count += 1
+        else :
+            mispelled += word + ' '
+    return err_count,mispelled
 
 def read_file(file):
     fp= open(file,"r",encoding='utf8',errors='ignore')
@@ -72,8 +122,11 @@ def check_capitalization(nlp) :
 
 def check_grammar(data) :
     err_count = 0
-    modified_text = ''
-    c,modified_text = check_articleError([nltk.pos_tag(word_tokenize(data))])
+    c,modified_text = spell_checker(data)
+    err_count += c
+    c,modified_text = check_pluralization([nltk.pos_tag(word_tokenize(modified_text))])
+    err_count += c
+    c,modified_text = check_articleError([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
     c,modified_text = check_capitalization([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
