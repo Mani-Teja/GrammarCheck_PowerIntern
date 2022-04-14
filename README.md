@@ -1,5 +1,5 @@
 # GrammarCheck_PowerIntern
-# Infosys PowerIntern project on NLP
+Infosys PowerIntern project on NLP
 
 # Install below python packages using PIP :
 
