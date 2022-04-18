@@ -8,8 +8,6 @@ from pattern.en import referenced
          O/P:I ate an apple.
 """
 def check_articleError(nlp):
-    path="uncNouns.txt"
-    unc_text=read_file(path)
     unc_words=[]
     for i in unc_text:
         tokens=word_tokenize(i)
