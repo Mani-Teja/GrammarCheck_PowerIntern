@@ -8,14 +8,19 @@ from util.pluralization import check_pluralization
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
+#function for checking grammer errors
 def check_grammar(data) :
     err_count = 0
+    #function call for spelling checker
     c,modified_text = spell_checker(data)
     err_count += c
+    #function call for checking pluralization errors
     c,modified_text = check_pluralization([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
+    #function call for checking article errors
     c,modified_text = check_articleError([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
+    #function call for checking capitalization errors
     c,modified_text = check_capitalization([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
     return err_count , modified_text
