@@ -7,7 +7,7 @@ from pattern.en import referenced
          I/P:I ate a apple.
          O/P:I ate an apple.
 """
-def check_articleError(nlp):
+def check_articleError(nlp,unc_text):
     unc_words=[]
     for i in unc_text:
         tokens=word_tokenize(i)
