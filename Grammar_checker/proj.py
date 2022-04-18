@@ -19,8 +19,10 @@ def check_grammar(data) :
     #function call for checking pluralization errors
     c,modified_text = check_pluralization([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
+    path="uncNouns.txt"
+    unc_text=read_file(path)
     #function call for checking article errors
-    c,modified_text = check_articleError([nltk.pos_tag(word_tokenize(modified_text))])
+    c,modified_text = check_articleError([nltk.pos_tag(word_tokenize(modified_text))],unc_text)
     err_count += c
     #function call for checking capitalization errors
     c,modified_text = check_capitalization([nltk.pos_tag(word_tokenize(modified_text))])
