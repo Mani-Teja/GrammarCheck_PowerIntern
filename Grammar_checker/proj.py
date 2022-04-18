@@ -1,8 +1,9 @@
 import nltk
-from util.spell import *
-from util.article import *
-from util.capitalization import *
-from util.pluralization import *
+from nltk import pos_tag,word_tokenize
+from util.spell import spell_checker
+from util.article import check_articleError
+from util.capitalization import check_capitalization
+from util.pluralization import check_pluralization
 
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
