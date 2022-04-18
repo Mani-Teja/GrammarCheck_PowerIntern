@@ -20,14 +20,14 @@ def check_articleError(nlp):
     for i in unc_text:
         tokens=word_tokenize(i)
         unc_words.append(tokens[0].lower())
-    count=0
-    ntext=""
+    error_count=0
+    correct_text=""
     for sent in nlp :
         for i in range(len(sent)) :
             if sent[i][0] in ['a','an']:
                 #to check whether the (i)th word is in text file or tag of (i+1)th word is plural noun(eg cats,pencils) or proper noun,plural(eg Indians,Americans)
                 if ((sent[i][0] in unc_words) or sent[i+1][1] in ["NNS" ,"NNPS"] ):
-                    count+=1
+                    error_count+=1
                 #to check whether the tag of(i+1)th word is adjective(large, fast, honest) and the tag of (i+2)th word is plural noun  
                 elif (i<len(sent)-2) and (sent[i+1][1] in ["JJ","JJR"]) and (sent[i+2][1] in ['NNP','NN']):
                     """refernced provides appropriate article before the word 
@@ -37,26 +37,26 @@ def check_articleError(nlp):
                     """    
                     #to check whether (i)th word equals 'a'  and refernce of next word equals 'an '+(i+1)th word     
                     if (sent[i][0]=='a' and referenced(sent[i+1][0])==('an '+sent[i+1][0])):
-                        ntext+='an'
-                        count+=1
+                        correct_text+='an'
+                        error_count+=1
                     #to check whether (i)th word equals 'an'  and refernce of next word equals 'a '+(i+1)th word    
                     elif(sent[i][0]=='an' and referenced(sent[i+1][0])==('a '+sent[i+1][0])):
-                        ntext+='a'
-                        count+=1
+                        correct_text+='a'
+                        error_count+=1
                     else:
-                        ntext+=sent[i][0]
+                        correct_text+=sent[i][0]
                 elif (sent[i+1][1] not in ["NNP","NN"] ):
-                    count+=1
+                    error_count+=1
                 elif(sent[i][0] =='a' and referenced(sent[i+1][0])==('an '+sent[i+1][0])):
-                    ntext+='an'
-                    count+=1
+                    correct_text+='an'
+                    error_count+=1
                 elif(sent[i][0]=='an' and referenced(sent[i+1][0])==('a '+sent[i+1][0])):
-                    ntext+='a'
-                    count+=1
+                    correct_text+='a'
+                    error_count+=1
                 else:
-                    ntext+=sent[i][0]
-                ntext+=" "
+                    correct_text+=sent[i][0]
+                correct_text+=" "
             else:
-                ntext+=sent[i][0]
-                ntext+=" "
-    return count , ntext
+                correct_text+=sent[i][0]
+                correct_text+=" "
+    return error_count , correct_text
