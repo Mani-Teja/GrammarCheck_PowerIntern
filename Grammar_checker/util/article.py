@@ -28,6 +28,7 @@ def check_articleError(nlp):
                 #to check whether the (i)th word is in text file or tag of (i+1)th word is plural noun(eg cats,pencils) or proper noun,plural(eg Indians,Americans)
                 if ((sent[i][0] in unc_words) or sent[i+1][1] in ["NNS" ,"NNPS"] ):
                     count+=1
+                #to check whether the tag of(i+1)th word is adjective(large, fast, honest) and the tag of (i+2)th word is plural noun  
                 elif (i<len(sent)-2) and (sent[i+1][1] in ["JJ","JJR"]) and (sent[i+2][1] in ['NNP','NN']):
                     """refernced provides appropriate article before the word 
                     eg:
