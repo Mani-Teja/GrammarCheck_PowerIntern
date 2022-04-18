@@ -1,6 +1,6 @@
 import nltk
 
-"""Function built for checking Capitalization Error
+"""Function built by Sai Maniteja Penugonda for checking Capitalization Error
    eg 1:
         I/P:shyam is a friend.
         O/P:Shyam is a friend.
