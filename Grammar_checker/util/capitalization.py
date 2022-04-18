@@ -1,5 +1,10 @@
 import nltk
 
+"""Function built for checking Capitalization Error
+   eg 1:
+        I/P:shyam is a friend.
+        O/P:Shyam is a friend.
+"""
 def check_capitalization(nlp) :
     error_count = 0
     correct_text = ''
