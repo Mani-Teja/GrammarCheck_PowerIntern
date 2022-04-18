@@ -8,6 +8,12 @@ from util.pluralization import check_pluralization
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
 
+#Reading Text File by Chakori Chaturvedi 
+def read_file(file):
+    fp= open(file,"r",encoding='utf8',errors='ignore')
+    text=fp.readlines()
+    return text
+
 #function for checking grammer errors
 def check_grammar(data) :
     err_count = 0
