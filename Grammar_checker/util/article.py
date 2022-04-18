@@ -47,9 +47,11 @@ def check_articleError(nlp):
                         correct_text+=sent[i][0]
                 elif (sent[i+1][1] not in ["NNP","NN"] ):
                     error_count+=1
+                #to check whether (i)th word equals 'a'  and refernce of next word equals 'an '+(i+1)th word     
                 elif(sent[i][0] =='a' and referenced(sent[i+1][0])==('an '+sent[i+1][0])):
                     correct_text+='an'
                     error_count+=1
+                #to check whether (i)th word equals 'an'  and refernce of next word equals 'a '+(i+1)th word     
                 elif(sent[i][0]=='an' and referenced(sent[i+1][0])==('a '+sent[i+1][0])):
                     correct_text+='a'
                     error_count+=1
