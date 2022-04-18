@@ -1,6 +1,11 @@
 import nltk
 from pattern.text.en import pluralize, singularize
 
+"""Function built by Aviral Mishra for checking Pluralization Error
+   eg 1:
+        I/P:there are many chocolate in the box.
+        O/P:There are many chocolates in the box.
+"""
 def check_pluralization(nlp):
     count=0
     correct_text=""
