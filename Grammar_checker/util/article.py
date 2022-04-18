@@ -2,11 +2,17 @@ from nltk.tokenize import word_tokenize
 import nltk
 from pattern.en import referenced
 
+#Reading Text File
 def read_file(file):
     fp= open(file,"r",encoding='utf8',errors='ignore')
     text=fp.readlines()
     return text
 
+"""Function build for checking article errors in a given sentence.
+   eg 1:-
+         I/P:I ate a apple.
+         O/P:I ate an apple.
+"""
 def check_articleError(nlp):
     path="uncNouns.txt"
     unc_text=read_file(path)
