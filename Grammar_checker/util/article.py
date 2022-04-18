@@ -25,6 +25,7 @@ def check_articleError(nlp):
     for sent in nlp :
         for i in range(len(sent)) :
             if sent[i][0] in ['a','an']:
+                #to check whether the (i)th word is in text file or tag of (i+1)th word is plural noun(eg cats,pencils) or proper noun,plural(eg Indians,Americans)
                 if ((sent[i][0] in unc_words) or sent[i+1][1] in ["NNS" ,"NNPS"] ):
                     count+=1
                 elif (i<len(sent)-2) and (sent[i+1][1] in ["JJ","JJR"]) and (sent[i+2][1] in ['NNP','NN']):
