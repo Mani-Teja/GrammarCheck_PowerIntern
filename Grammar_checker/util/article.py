@@ -2,12 +2,6 @@ from nltk.tokenize import word_tokenize
 import nltk
 from pattern.en import referenced
 
-#Reading Text File by Chakori Chaturvedi 
-def read_file(file):
-    fp= open(file,"r",encoding='utf8',errors='ignore')
-    text=fp.readlines()
-    return text
-
 """Function build by Chakori Chaturvedi for checking article errors in a given sentence.
    eg 1:-
          I/P:I ate a apple.
