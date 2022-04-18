@@ -4,7 +4,7 @@ from util.spell import spell_checker
 from util.article import check_articleError
 from util.capitalization import check_capitalization
 from util.pluralization import check_pluralization
-from util.read_file import
+from util.read_file import readfile
 
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
