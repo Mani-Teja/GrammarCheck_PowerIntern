@@ -1,6 +1,10 @@
 from spellchecker import SpellChecker
 from nltk.tokenize import word_tokenize
 
+"""This function is built by Aviral Mishra for checking any spelling errors.
+   I/P:amazing spiderman is out in theators.
+   O/P:Amazing spiderman is out in theaters.
+"""
 def spell_checker(data):
     spell = SpellChecker()
     misspelled = word_tokenize(data)
