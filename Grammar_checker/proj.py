@@ -8,6 +8,8 @@ from util.readfile import read_file
 from util.subVerb import check_SubVerbAgreement
 from util.Because import check_becauseError
 from util.apostrophe import apostropheError
+from util.andError import and_check
+from util.tense import check_TenseError
 
 nltk.download('punkt')
 nltk.download('averaged_perceptron_tagger')
@@ -19,25 +21,39 @@ def check_grammar(data) :
     #function call for spelling checker
     c,modified_text = spell_checker(data)
     err_count += c
+    print('spell : ',modified_text)
     #function call for checking pluralization errors
     c,modified_text = check_pluralization([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
-    #function for checking apostrophe error
-    c,modified_text = apostropheError([nltk.pos_tag(word_tokenize(modified_text))])
-    err_count += c
+    print('plur : ',modified_text)
     path="resources/uncNouns.txt"
     unc_text=read_file(path)
     #function call for checking article errors
     c,modified_text = check_articleError([nltk.pos_tag(word_tokenize(modified_text))],unc_text)
     err_count += c
+    print('artic : ',modified_text)
     #function call for checking subject Verb Agreement errors
-    #c,modified_text = check_SubVerbAgreement([nltk.pos_tag(word_tokenize(modified_text))])
-    #err_count += c
+    c,modified_text = check_SubVerbAgreement([nltk.pos_tag(word_tokenize(modified_text))])
+    err_count += c
+    print('subver : ',modified_text)
     #function call for checking because error
     c,modified_text = check_becauseError([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
+    print('becoz : ',modified_text)
+    #function call to check for and conjuction
+    c,modified_text = and_check([nltk.pos_tag(word_tokenize(modified_text))])
+    err_count += c
+    print('andc : ',modified_text)
+    #function for checking apostrophe error
+    c,modified_text = apostropheError([nltk.pos_tag(word_tokenize(modified_text))])
+    err_count += c
+    print('apos : ',modified_text)
     #function call for checking capitalization errors
     c,modified_text = check_capitalization([nltk.pos_tag(word_tokenize(modified_text))])
+    err_count += c
+    print('cap : ',modified_text)
+    #function call for checking tense errors
+    c,modified_text = check_TenseError([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
     return err_count , modified_text
 
