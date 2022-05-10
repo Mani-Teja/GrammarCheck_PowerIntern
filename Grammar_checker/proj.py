@@ -72,6 +72,7 @@ def check_grammar(data) :
     #function call for checking tense errors
     c,modified_text = check_TenseError([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
+    print('tense : ',modified_text)
     return err_count , modified_text
 
 data = input("enter sentence : ")
