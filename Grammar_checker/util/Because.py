@@ -10,7 +10,7 @@ def check_becauseError(nlp):
                 #if condition for checking if the token encountered is punctuation
                 if sent[i+1][1]=='PUNCT' or i==len(sent)-1:
                     error_count+=1
-                    correct_text+=sent[:-1][0]
+                    correct_text+="."
                     break
                 #if condition for checking if the token encountered is preposition
                 if sent[i+1][1]=='IN':
