@@ -6,9 +6,9 @@
         I/P:theyre leaving tomorrow
         O/P:they're leaving tomorrow
 """
-import nltk
 from util.compound import handleCompoundErrors
 from nltk.stem import PorterStemmer
+
 def apostropheError(nlp):
     error_count=0
     correct_text=""
@@ -16,9 +16,10 @@ def apostropheError(nlp):
     suffixList=["m","re","t","s","ll","ve","d"]      #List of suffixes
     for s in nlp:
         for i in range(len(s)):
+            print(s[i][0]+"****"+s[i][1])
             if (i<len(s)-1) and s[i][1] in ['NN','NNS','NNP','NNPS','VB']:            #if condition for checking the tagging of the current token
                 rootword=ps.stem(s[i][0])
-                if(rootword!=s[i][0]):
+                if(rootword!=(s[i][0].lower())):
                     for j in suffixList :                                                 #a loop traversing through the suffixList
                         if s[i][0].endswith(j):
                             if s[i+1][1] in ['NN','NNS','NNP','NNPS','VBG','DT','JJ']:    #if condition for checking the tagging of the next token
@@ -31,6 +32,9 @@ def apostropheError(nlp):
                                     correct_text+=s[i][0][0:x]
                                     correct_text+="'"+j+" "
                                     break
+                            else:
+                                correct_text+=s[i][0]
+                                correct_text+=" "
                 else:
                     correct_text+=s[i][0]
                     correct_text+=" "
