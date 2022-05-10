@@ -4,7 +4,6 @@ from util.spell import spell_checker
 from util.article import check_articleError
 from util.capitalization import check_capitalization
 from util.pluralization import check_pluralization
-from util.readfile import read_file
 from util.subVerb import check_SubVerbAgreement
 from util.Because import check_becauseError
 from util.apostrophe import apostropheError
@@ -34,10 +33,8 @@ def check_grammar(data) :
     c,modified_text = check_pluralization([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
     print('plur : ',modified_text)
-    path="resources/uncNouns.txt"
-    unc_text=read_file(path)
     #function call for checking article errors
-    c,modified_text = check_articleError([nltk.pos_tag(word_tokenize(modified_text))],unc_text)
+    c,modified_text = check_articleError([nltk.pos_tag(word_tokenize(modified_text))])
     err_count += c
     print('artic : ',modified_text)
     #function call for checking subject Verb Agreement errors
