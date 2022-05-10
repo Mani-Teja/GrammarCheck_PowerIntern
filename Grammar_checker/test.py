@@ -2,7 +2,6 @@
 
 import unittest
 from nltk import pos_tag , word_tokenize
-from nltk import pos_tag,word_tokenize
 from util.spell import spell_checker
 from util.article import check_articleError
 from util.capitalization import check_capitalization
