@@ -1,13 +1,16 @@
 from nltk.tokenize import word_tokenize
 import nltk
 from pattern.en import referenced
+from util.readfile import read_file
 
 """Function build by Chakori Chaturvedi for checking article errors in a given sentence.
    eg 1:-
          I/P:I ate a apple.
          O/P:I ate an apple.
 """
-def check_articleError(nlp,unc_text):
+def check_articleError(nlp):
+    path="resources/uncNouns.txt"
+    unc_text=read_file(path)
     unc_words=[]
     for i in unc_text:
         tokens=word_tokenize(i)
