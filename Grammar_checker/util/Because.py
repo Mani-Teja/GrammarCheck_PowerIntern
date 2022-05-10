@@ -22,7 +22,7 @@ def check_becauseError(nlp):
                         correct_text+="."
                         break
                     else:
-                        correct_text+=sent[i][1]
+                        correct_text+=sent[i][0]
                         correct_text+=" "
                 #if condition for checking if the token encountered is singular noun,plural noun,proper singular noun,proper plural noun,personal pronoun,possessive pronoun        
                 elif sent[i+1][1] in ['NN','NNS','NNP','NNPS','PRP','PRP$']:
