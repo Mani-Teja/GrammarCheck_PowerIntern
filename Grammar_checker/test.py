@@ -42,3 +42,19 @@ class TestGrammar(unittest.TestCase) :
         expected = 'andrew and I will conduct todays meet '
         actual =check_reflexError([pos_tag(word_tokenize("andrew and myself will conduct todays meet"))])
         self.assertEqual(actual[1] , expected)
+        
+    def test_ArticleError(self) :
+        expected = ("This morning I received an email from a friend who knows a lot about grammar and punctuation ")
+        actual =check_articleError([pos_tag(word_tokenize("This morning I received a email from a friend who knows a lot about grammar and punctuation"))])
+        self.assertEqual(actual[1] , expected)
+
+    def test_BecauseError(self) :
+        expected = ("The Prime Minister needs to come forward and address the nation because of this.Unless he assures everyone that the country is united against the fight with the invisible enemy , we will not be able to flourish .")
+        actual =check_becauseError([pos_tag(word_tokenize("The Prime Minister needs to come forward and address the nation because of this.Unless he assures everyone that the country is united against the fight with the invisible enemy,we will not be able to flourish because it."))])
+        self.assertEqual(actual[1] , expected)
+        
+
+    def test_TenseError(self) :
+        expected = ("I have finished the report ")
+        actual =check_TenseError([pos_tag(word_tokenize("I have finish the report"))])
+        self.assertEqual(actual[1] , expected)    
