@@ -23,11 +23,6 @@ class TestGrammar(unittest.TestCase) :
         actual =check_capitalization([pos_tag(word_tokenize("I was listening to the new Run the jewels album. It is mostly hardcore Hip hop and i’d heard about it through youtube reviews online. Fantano scored it an 8"))])
         self.assertEqual(actual[1] , expected)
 
-    def test_ArticleError(self) :
-        expected = "I ate an apple "
-        actual = check_articleError([pos_tag(word_tokenize("I ate a apple"))])
-        self.assertEquals(actual[1] , expected)
-
     def test_AndError(self) :
         expected = 'ajay and vijay are friends'
         actual =and_check([pos_tag(word_tokenize("ajay vijay are friends"))])
