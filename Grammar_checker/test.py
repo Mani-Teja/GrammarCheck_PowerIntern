@@ -53,7 +53,6 @@ class TestGrammar(unittest.TestCase) :
         actual =check_becauseError([pos_tag(word_tokenize("The Prime Minister needs to come forward and address the nation because of this.Unless he assures everyone that the country is united against the fight with the invisible enemy,we will not be able to flourish because it."))])
         self.assertEqual(actual[1] , expected)
         
-
     def test_TenseError(self) :
         expected = ("I have finished the report ")
         actual =check_TenseError([pos_tag(word_tokenize("I have finish the report"))])
