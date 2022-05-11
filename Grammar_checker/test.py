@@ -51,3 +51,8 @@ class TestGrammar(unittest.TestCase) :
         expected = ("I have finished the report ")
         actual =check_TenseError([pos_tag(word_tokenize("I have finish the report"))])
         self.assertEqual(actual[1] , expected)    
+
+    def test_ButError(self) :
+        expected = ("Anna is a highly intelligent girl , but she is rather lazy")
+        actual =check_butError([pos_tag(word_tokenize("Anna is a highly intelligent girl,she is rather lazy"))])
+        self.assertEqual(actual[1] , expected)
