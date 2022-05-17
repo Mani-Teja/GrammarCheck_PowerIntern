@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="code part.">
+    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="updated and added unit tests.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/InternProject/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/proj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternProject/test.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternProject/util/apostrophe.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/util/apostrophe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternProject/util/spell.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/util/spell.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/rerquirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/requirements.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/sentFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/util/sentFormatter.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +44,7 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/tpenu/Desktop/INFOSYS/NLP/Grammar_checker&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python tests.Python tests for test.TestGrammar">
+  <component name="RunManager" selected="Python.proj">
     <configuration name="Grammar_checker" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Grammar_checker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -108,8 +108,8 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test.TestGrammar" />
         <item itemvalue="Python.proj" />
+        <item itemvalue="Python tests.Python tests for test.TestGrammar" />
         <item itemvalue="Python.proj" />
       </list>
     </recent_temporary>
@@ -144,7 +144,14 @@
       <option name="project" value="LOCAL" />
       <updated>1652415689801</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="updated and added unit tests.">
+      <created>1652422394609</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1652422394609</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -188,6 +195,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="1st commit" />
     <MESSAGE value="code part." />
-    <option name="LAST_COMMIT_MESSAGE" value="code part." />
+    <MESSAGE value="updated and added unit tests." />
+    <option name="LAST_COMMIT_MESSAGE" value="updated and added unit tests." />
   </component>
 </project>

@@ -1,3 +1,9 @@
+'''
+This method developed by Maniteja.
+This method helps to format the given sentence into the readable format which doesn't have any indentation issues.
+extra spaces at the Head and Tail of the sentences and irregular spaces in between the sentence are eliminated.
+
+'''
 def textFormatter(text) :
     formatter = ''
     for word in text.split() :
@@ -6,7 +12,4 @@ def textFormatter(text) :
         formatter += word
     if formatter[-1] != '.' :
         formatter += '.'
-    print(text)
     return formatter
-
-#print(textFormatter('I was listening to the new Run the Jewels album . It is mostly hardcore Hip hop and I ’ d heard about it through youtube Reviews online . Fantano scored it an 8 '))

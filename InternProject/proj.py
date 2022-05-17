@@ -35,7 +35,7 @@ def check_grammar(data):
     err_count += c
     print('spell : ', modified_text)
     #function for checking apostrophe error
-    c, modified_text = apostropheError(tagger(modified_text))
+    c, modified_text = check_apostropheError(tagger(modified_text))
     err_count += c
     print('apostrophe :', modified_text)
     #function call for checking pluralization errors
