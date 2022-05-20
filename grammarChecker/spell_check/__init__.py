@@ -6,7 +6,7 @@
 
 from spellchecker import SpellChecker
 from nltk.tokenize import word_tokenize
-from grammarChecker.util.utility import textFormatter
+from grammarChecker.util.__init__ import textFormatter
 
 
 def spell_checker(data):

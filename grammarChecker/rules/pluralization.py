@@ -5,7 +5,7 @@
 """
 
 from pattern.text.en import pluralize, singularize
-from grammarChecker.util.utility import textFormatter
+from grammarChecker.util import textFormatter
 
 
 def check_pluralization(nlp):

@@ -5,7 +5,7 @@
 """
 from nltk.tokenize import word_tokenize
 from pattern.en import referenced
-from grammarChecker.util.utility import *
+from grammarChecker.util import *
 
 
 def check_articleError(nlp):

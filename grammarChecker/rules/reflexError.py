@@ -7,7 +7,7 @@ o/p : andrew and I will conduct todays meet
 
 '''
 
-from grammarChecker.util.utility import textFormatter
+from grammarChecker.util import textFormatter
 
 
 def check_reflexError(nlp):

@@ -7,7 +7,7 @@
         O/P:they're leaving tomorrow
 """
 from nltk import word_tokenize, pos_tag
-from grammarChecker.util.utility import textFormatter
+from grammarChecker.util import textFormatter
 
 
 def check_apostropheError(nlp):

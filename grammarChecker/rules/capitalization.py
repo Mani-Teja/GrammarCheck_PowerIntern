@@ -3,7 +3,7 @@
         I/P:shyam is my friend.
         O/P:Shyam is my friend.
 """
-from grammarChecker.util.utility import textFormatter
+from grammarChecker.util import textFormatter
 
 
 def check_capitalization(nlp):

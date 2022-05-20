@@ -1,5 +1,5 @@
 from nltk import pos_tag, word_tokenize, sent_tokenize, download, data
-from grammarChecker.spell_check.spell import spell_checker
+from grammarChecker.spell_check import spell_checker
 from grammarChecker.rules.article import check_articleError
 from grammarChecker.rules.capitalization import check_capitalization
 from grammarChecker.rules.pluralization import check_pluralization

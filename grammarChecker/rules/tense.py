@@ -1,5 +1,5 @@
 from pattern.en import conjugate
-from grammarChecker.util.utility import textFormatter
+from grammarChecker.util import textFormatter
 
 
 def check_TenseError(nlp):

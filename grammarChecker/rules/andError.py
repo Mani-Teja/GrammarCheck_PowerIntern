@@ -3,7 +3,7 @@
          I/P: ajay vijay are friends
          O/P: ajay and vijay are friends
 """
-from grammarChecker.util.utility import textFormatter
+from grammarChecker.util import textFormatter
 
 
 def and_check(nlp) :

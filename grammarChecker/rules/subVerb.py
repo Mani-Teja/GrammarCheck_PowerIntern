@@ -7,7 +7,7 @@ o/p : (int , string) -> (error count , correct text)
 """
 
 from pattern.en import conjugate
-from grammarChecker.util.utility import textFormatter
+from grammarChecker.util import textFormatter
 
 
 def check_SubVerbAgreement(nlp):
