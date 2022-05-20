@@ -1,4 +1,4 @@
-from nltk import pos_tag, word_tokenize, sent_tokenize, download, data
+from nltk import pos_tag, word_tokenize, sent_tokenize
 from grammarChecker.spell_check import spell_checker
 from grammarChecker.rules.article import check_articleError
 from grammarChecker.rules.capitalization import check_capitalization
@@ -12,21 +12,6 @@ from grammarChecker.rules.But import check_butError
 from grammarChecker.rules.eitherNeither import check_eitherneitherError
 from grammarChecker.rules.althoughthough import check_althoughthoughError
 from grammarChecker.rules.reflexError import check_reflexError
-
-
-def __init__():
-    try:
-        data.find('tokenizers/punkt')
-    except LookupError:
-        download('punkt')
-    try:
-        data.find("taggers/averaged_perceptron_tagger")
-    except LookupError:
-        download('averaged_perceptron_tagger')
-    try:
-        data.find('corpora/omw-1.4')
-    except LookupError:
-        download('omw-1.4')
 
 
 def tagger(data):
@@ -93,6 +78,8 @@ def check_grammar(data):
     err_count += count
     print('tense : ', modified_text)
     return err_count, modified_text
+
+
 
 data = input("enter sentence : ")
 errors , text = check_grammar(data)

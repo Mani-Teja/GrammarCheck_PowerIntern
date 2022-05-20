@@ -1,24 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="refactor the code.">
+    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="wrap up the project.">
+      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/main/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/main/proj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/Because.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/Because.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/But.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/But.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/althoughthough.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/althoughthough.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/andError.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/andError.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/License.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/main/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/main/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/readme.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/grammarChecker/rules/apostrophe.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/apostrophe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/article.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/capitalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/capitalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/eitherNeither.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/eitherNeither.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grammarChecker/rules/pluralization.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/pluralization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/reflexError.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/reflexError.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grammarChecker/rules/subVerb.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/subVerb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/tense.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/tense.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/spell_check/spell.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/spell_check/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/util/utility.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/util/__init__.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +40,9 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="ProjectId" id="29479hyC7dpJon80TBD83WealRb" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -59,11 +57,13 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\tpenu\Desktop\INFOSYS\NLP\Grammar_checker\grammarChecker" />
+      <recent name="C:\Users\tpenu\Desktop\INFOSYS\NLP\Grammar_checker" />
       <recent name="C:\Users\tpenu\Desktop\INFOSYS\NLP\Grammar_checker\grammarChecker\main" />
       <recent name="C:\Users\tpenu\Desktop\INFOSYS\NLP\Grammar_checker\grammarChecker\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python.proj">
+  <component name="RunManager" selected="Python.checker (1)">
     <configuration name="Grammar_checker" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="Grammar_checker" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -106,7 +106,28 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="proj" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="checker (1)" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="Grammar_checker" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/grammarChecker" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grammarChecker/checker.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="checker" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Grammar_checker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,7 +139,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/grammarChecker/main/proj.py" />
+      <option name="SCRIPT_NAME" value="C:\Users\tpenu\Desktop\INFOSYS\NLP\Grammar_checker\grammarChecker\checker.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -127,18 +148,25 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test.TestGrammar" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="setup" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="Grammar_checker" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
       <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/InternProject" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test.TestGrammar&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/setup.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
     <configuration name="Python tests for unitTest.TestGrammar" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
@@ -158,17 +186,18 @@
     <list>
       <item itemvalue="Python.Grammar_checker" />
       <item itemvalue="Python.__init__" />
-      <item itemvalue="Python.proj" />
+      <item itemvalue="Python.checker" />
+      <item itemvalue="Python.checker (1)" />
+      <item itemvalue="Python.setup" />
       <item itemvalue="Python tests.Python tests for unitTest.TestGrammar" />
-      <item itemvalue="Python tests.Python tests for test.TestGrammar" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Python.proj" />
+        <item itemvalue="Python.checker (1)" />
+        <item itemvalue="Python.checker" />
+        <item itemvalue="Python.setup" />
         <item itemvalue="Python.__init__" />
         <item itemvalue="Python tests.Python tests for unitTest.TestGrammar" />
-        <item itemvalue="Python tests.Python tests for test.TestGrammar" />
-        <item itemvalue="Python.proj" />
       </list>
     </recent_temporary>
   </component>
@@ -223,8 +252,18 @@
       <option name="project" value="LOCAL" />
       <updated>1653051183736</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="wrap up the project.">
+      <created>1653052539686</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1653052539686</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="com.intellij.fileTypeFactory" implementationName="requirements.txt" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
@@ -270,6 +309,7 @@
     <MESSAGE value="updated and added unit tests." />
     <MESSAGE value="refactor the structure" />
     <MESSAGE value="refactor the code." />
-    <option name="LAST_COMMIT_MESSAGE" value="refactor the code." />
+    <MESSAGE value="wrap up the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="wrap up the project." />
   </component>
 </project>
