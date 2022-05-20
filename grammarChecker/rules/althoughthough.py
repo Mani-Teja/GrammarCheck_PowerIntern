@@ -1,4 +1,4 @@
-from util.utility import textFormatter
+from grammarChecker.util.utility import textFormatter
 
 
 def check_althoughthoughError(nlp):
@@ -23,7 +23,7 @@ def check_althoughthoughError(nlp):
                 correct_text += "yet "
                 continue
             else:
-                correct_text += s[i][0] + " "
+                correct_text += sent[index][0] + " "
         # condition for checking if there is a yet present in the sentence without though or although as the first word of the sentence
         if though_count == 0 and although_count == 0 and yet_count == 1:
             correct_text = "Though " + correct_text

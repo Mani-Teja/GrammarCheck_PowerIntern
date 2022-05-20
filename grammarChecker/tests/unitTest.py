@@ -1,19 +1,19 @@
-# python -m unittest test.py
+# python -m unittest unitTest.py
 
 import unittest
 from nltk import pos_tag, word_tokenize
-from util.article import check_articleError
-from util.capitalization import check_capitalization
-from util.pluralization import check_pluralization
-from util.subVerb import check_SubVerbAgreement
-from util.Because import check_becauseError
-from util.apostrophe import check_apostropheError
-from util.andError import and_check
-from util.tense import check_TenseError
-from util.But import check_butError
-from util.eitherNeither import check_eitherneitherError
-from util.althoughthough import check_althoughthoughError
-from util.reflexError import check_reflexError
+from grammarChecker.rules.article import check_articleError
+from grammarChecker.rules.capitalization import check_capitalization
+from grammarChecker.rules.pluralization import check_pluralization
+from grammarChecker.rules.subVerb import check_SubVerbAgreement
+from grammarChecker.rules.Because import check_becauseError
+from grammarChecker.rules.apostrophe import check_apostropheError
+from grammarChecker.rules.andError import and_check
+from grammarChecker.rules.tense import check_TenseError
+from grammarChecker.rules.But import check_butError
+from grammarChecker.rules.eitherNeither import check_eitherneitherError
+from grammarChecker.rules.althoughthough import check_althoughthoughError
+from grammarChecker.rules.reflexError import check_reflexError
 
 
 class TestGrammar(unittest.TestCase):

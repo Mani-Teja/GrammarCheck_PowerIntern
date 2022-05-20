@@ -6,7 +6,7 @@
 
 from spellchecker import SpellChecker
 from nltk.tokenize import word_tokenize
-from util.utility import textFormatter
+from grammarChecker.util.utility import textFormatter
 
 
 def spell_checker(data):
@@ -15,7 +15,8 @@ def spell_checker(data):
     mispelled, err_count = "", 0
     for word in misspelled:
         corr_word = spell.correction(word)     # correcting spelling error
-        if word != corr_word and not word.isupper() and not ('"' in word or "'" in word):   # if condition for checking if token is not in uppercase or any for the following punctuation marks.
+        # if condition for checking if token is not in uppercase or any for the following punctuation marks.
+        if word != corr_word and not word.isupper() and not ('"' in word or "'" in word):
             mispelled = mispelled+corr_word+" "
             err_count += 1
         else :

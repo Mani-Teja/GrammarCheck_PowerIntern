@@ -1,11 +1,12 @@
-#Reading Text File by Chakori Chaturvedi 
+# Reading Text File by Chakori Chaturvedi
 def read_file(file):
-    fp= open(file, "r", encoding='utf8', errors='ignore')
-    text=fp.readlines()
+    fp = open(file, "r", encoding='utf8', errors='ignore')
+    text = fp.readlines()
     return text
 
 
 def textFormatter(text):
+    print('input :',text)
     formatter = ''
     for word in text.split():
         if word[0].isalnum() and (len(formatter) > 0 and formatter[-1] != "'"):
@@ -14,3 +15,5 @@ def textFormatter(text):
     if formatter[-1] != '.':
         formatter += '.'
     return formatter
+
+#print(textFormatter('andrew and myself will conduct todays meet'))
