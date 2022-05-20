@@ -6,13 +6,13 @@
 
 from spellchecker import SpellChecker
 from nltk.tokenize import word_tokenize
-from util.sentFormatter import textFormatter
+from util.utility import textFormatter
 
 
 def spell_checker(data):
     spell = SpellChecker()
     misspelled = word_tokenize(data)
-    mispelled, err_count = "" , 0
+    mispelled, err_count = "", 0
     for word in misspelled:
         corr_word = spell.correction(word)     # correcting spelling error
         if word != corr_word and not word.isupper() and not ('"' in word or "'" in word):   # if condition for checking if token is not in uppercase or any for the following punctuation marks.

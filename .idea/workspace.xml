@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="updated and added unit tests.">
+    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="refactoring the project structure">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternProject/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/proj.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternProject/rerquirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternProject/util/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/InternProject/util/sentFormatter.py" beforeDir="false" afterPath="$PROJECT_DIR$/InternProject/util/sentFormatter.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/resources/compounds.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/resources/uncNouns.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/Because.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/But.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/althoughthough.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/andError.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/apostrophe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/article.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/capitalization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/compound.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/eitherNeither.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/pluralization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/readfile.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/reflexError.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/sentFormatter.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/spell.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/subVerb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/InternProject/util/tense.py" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,7 +179,7 @@
                   <entry key="branch">
                     <value>
                       <list>
-                        <option value="trail" />
+                        <option value="HEAD" />
                       </list>
                     </value>
                   </entry>

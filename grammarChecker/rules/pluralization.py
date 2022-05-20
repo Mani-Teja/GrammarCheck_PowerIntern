@@ -12,10 +12,11 @@ def check_pluralization(nlp):
     correct_text=""
     for s in nlp:
         for i in range(len(s)):
+            
             if (i!=len(s)-1) and (s[i][1] in ['NN' , 'NNP','NNS' , 'NNPS']) and s[i-1][1] in ['CD']:          #if condition for checking if the token encountered has cardinal digit as a pervious token.
                 continue
-            if (i!=len(s)-1) and (s[i][1] in ['NN' , 'NNP']):                       #if condition for checking if the token encountered is singular noun or a singular pronoun.
-                if s[i+1][1] in ['VB','VBP'] or s[i-1][1] in ['VB','VBP','JJ']:     #if condition for checking if the singular noun or pronoun encountered is being followed by a (verb or singular verb in present tense) or has a (verb or singular verb in present tense or adjective) as its previous token. 
+            if (i!=len(s)-1) and (s[i][1] in ['NN' , 'NNP' ,'NNS' ]):                       #if condition for checking if the token encountered is singular noun or a singular pronoun.
+                if s[i+1][1] in ['VB'] or s[i-1][1] in ['VB','VBP'] or s[i-1][0]=="many" or s[i-2][0] in ["lot","excess"]:     #if condition for checking if the singular noun or pronoun encountered is being followed by a (verb or singular verb in present tense) or has a (verb or singular verb in present tense or adjective) as its previous token. 
                     error_count+=1
                     correct_text+=pluralize(s[i][0])+" "
                 else:
@@ -31,7 +32,7 @@ def check_pluralization(nlp):
                         error_count+=1
                         correct_text+=s[i][0]+" "+singularize(s[i+1][0])+" "
                 else:
-                    if s[i+1][1] in ['NN' , 'NNP']:            #if condition for checking if the cardinal digit encountered is being followed by a singular noun or singular pronoun.
+                    if s[i+1][1] in ['NNP', 'NNS']:            #if condition for checking if the cardinal digit encountered is being followed by a singular noun or singular pronoun.
                         error_count+=1
                         correct_text+=s[i][0]+" "+pluralize(s[i+1][0])+" "
             else:
