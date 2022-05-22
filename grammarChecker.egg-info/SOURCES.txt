@@ -7,6 +7,7 @@ grammarChecker.egg-info/SOURCES.txt
 grammarChecker.egg-info/dependency_links.txt
 grammarChecker.egg-info/requires.txt
 grammarChecker.egg-info/top_level.txt
+grammarChecker/resources/uncNouns.txt
 grammarChecker/rules/Because.py
 grammarChecker/rules/But.py
 grammarChecker/rules/__init__.py

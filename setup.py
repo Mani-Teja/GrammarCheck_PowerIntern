@@ -1,4 +1,4 @@
-from setuptools import setup , find_packages
+from setuptools import setup, find_packages
 
 setup(
     name="grammarChecker",
@@ -7,7 +7,6 @@ setup(
     author='aviral mishra, chakori chaturvedi, maniteja penugonda',
     # packages=['grammarChecker', 'main', 'rules', 'spell_check', 'tests', 'util'],
     packages=find_packages(),
-    package_data={'mypkg': ['*/resources/*']},
     install_requires=[
         'nltk',
         'pattern',

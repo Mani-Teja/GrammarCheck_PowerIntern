@@ -9,12 +9,6 @@ from grammarChecker.util import *
 
 
 def check_articleError(nlp):
-    path = "../resources/uncNouns.txt"
-    unc_text = read_file(path)
-    unc_words = []
-    for txt in unc_text:
-        tokens = word_tokenize(txt)
-        unc_words.append(tokens[0].lower())
     error_count = 0
     correct_text = ""
     for sent in nlp:
@@ -22,7 +16,7 @@ def check_articleError(nlp):
             if sent[index][0] in ['a', 'an']:
                 # to check whether the (i)th word is in text file or tag of (i+1)th word is plural noun(eg cats,
                 # pencils) or proper noun,plural(eg Indians,Americans)
-                if sent[index][0] in unc_words or sent[index + 1][1] in ["NNS", "NNPS"]:
+                if sent[index + 1][1] in ["NNS", "NNPS"]:
                     error_count += 1
                 # to check whether the tag of(i+1)th word is adjective(large, fast, honest) and the tag of (i+2)th
                 # word is plural noun

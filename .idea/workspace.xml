@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="wrap up the project.">
-      <change afterPath="$PROJECT_DIR$/readme.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="wrap up the project to final pip installable.">
+      <change afterPath="$PROJECT_DIR$/grammarChecker/checker.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/License.txt" beforeDir="false" afterPath="$PROJECT_DIR$/License.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/main/__init__.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/main/proj.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/checker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/readme.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/apostrophe.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/apostrophe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/pluralization.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/pluralization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/subVerb.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/subVerb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/setup.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/grammarChecker-0.1-py3-none-any.whl" beforeDir="false" afterPath="$PROJECT_DIR$/dist/grammarChecker-0.1-py3-none-any.whl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/grammarChecker-0.1.tar.gz" beforeDir="false" afterPath="$PROJECT_DIR$/dist/grammarChecker-0.1.tar.gz" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker.egg-info/SOURCES.txt" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker.egg-info/SOURCES.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/article.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/grammarChecker/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,14 +42,14 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/tpenu/Desktop/INFOSYS/NLP/Grammar_checker"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/tpenu/Desktop/INFOSYS/NLP/Grammar_checker&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\tpenu\Desktop\INFOSYS\NLP\Grammar_checker\grammarChecker" />
@@ -259,7 +254,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653052539686</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="wrap up the project to final pip installable.">
+      <created>1653067068787</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1653067068787</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -310,6 +312,7 @@
     <MESSAGE value="refactor the structure" />
     <MESSAGE value="refactor the code." />
     <MESSAGE value="wrap up the project." />
-    <option name="LAST_COMMIT_MESSAGE" value="wrap up the project." />
+    <MESSAGE value="wrap up the project to final pip installable." />
+    <option name="LAST_COMMIT_MESSAGE" value="wrap up the project to final pip installable." />
   </component>
 </project>
