@@ -13,7 +13,6 @@ from grammarChecker.rules.althoughthough import check_althoughthoughError
 from grammarChecker.rules.reflexError import check_reflexError
 from grammarChecker.util import base
 
-
 # function for checking grammar errors
 def check_grammar(data):
     err_count = 0

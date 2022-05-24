@@ -1,7 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="wrap up the project to final pip installable." />
+    <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="wrap up the project to final pip installable.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/checker.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/Because.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/Because.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/But.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/But.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/althoughthough.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/althoughthough.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/andError.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/andError.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/apostrophe.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/apostrophe.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/article.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/capitalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/capitalization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/eitherNeither.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/eitherNeither.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/pluralization.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/pluralization.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/reflexError.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/reflexError.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/subVerb.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/subVerb.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/tense.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/tense.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/tests/unitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/tests/unitTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/util/__init__.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -259,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653239653193</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="wrap up the project to final pip installable.">
+      <created>1653239789619</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1653239789619</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="UnknownFeatures">
