@@ -3,23 +3,33 @@
   <component name="ChangeListManager">
     <list default="true" id="4fb5bf41-8569-48a1-bbd2-df9c890c53a7" name="Changes" comment="wrap up the project to final pip installable.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/checker.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/checker.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/Because.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/Because.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/But.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/But.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/althoughthough.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/althoughthough.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/andError.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/andError.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/apostrophe.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/apostrophe.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/article.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/article.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/capitalization.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/capitalization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/eitherNeither.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/eitherNeither.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/pluralization.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/pluralization.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/reflexError.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/reflexError.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/subVerb.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/subVerb.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/rules/tense.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/rules/tense.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/tests/unitTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/tests/unitTest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/grammarChecker/util/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/grammarChecker/util/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/setup.py" beforeDir="false" afterPath="$PROJECT_DIR$/setup.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/checker.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/Because.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/But.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/althoughthough.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/andError.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/apostrophe.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/article.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/capitalization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/eitherNeither.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/pluralization.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/reflexError.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/subVerb.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/rules/tense.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/spell_check/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/tests/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/tests/unitTest.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/util/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/lib/grammarChecker/util/base.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/grammarChecker-0.1-py3-none-any.whl" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/grammarChecker-0.1.tar.gz" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker.egg-info/PKG-INFO" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker.egg-info/SOURCES.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker.egg-info/dependency_links.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker.egg-info/requires.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/grammarChecker.egg-info/top_level.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -285,7 +295,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653239789619</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="wrap up the project to final pip installable.">
+      <created>1653380175035</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1653380175035</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="UnknownFeatures">
